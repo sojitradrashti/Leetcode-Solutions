@@ -9,7 +9,7 @@ class Solution:
 
                 if maxJump >= len(nums)-1:
                     return True
-        return False
+        return True
 nums=[2,3,1,1,4]
 solution=Solution()
 result=solution.canJump(nums)
