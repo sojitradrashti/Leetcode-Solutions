@@ -1,18 +1,1 @@
-class Solution:
-    def firstMissingPositive(self, nums: List[int]) -> int:
-        nums.sort()
-        list1=set(nums)
-        index=1
-        for num in list1:
-            if num == index:
-                index += 1
-            elif num > index:
-                break
-        return index
 
-
-        
-nums=[1,2,0]
-solution= Solution()
-ans = solution.firstMissingPositive(nums)
-print(ans)
